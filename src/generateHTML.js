@@ -71,5 +71,17 @@ generateHTML = (data) => {
 
             pageArray.push(managerCard);
         }
+
+        if (role === 'Engineer') {
+            const engineerCard = generateEngineer(employee);
+
+            pageArray.push(engineerCard);
+        }
+
+        if (role === 'Intern') {
+            const internCard = generateIntern(employee);
+
+            pageArray.push(internCard);
+        }
     }
 }
