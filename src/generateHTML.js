@@ -1,3 +1,4 @@
+//writing function to create individual card
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
@@ -16,7 +17,7 @@ const generateManager = function (manager) {
                     </div>
                 </div>        
             </div>
-            `;
+     `;
 };
 
 const generateEngineer = function (engineer) {
@@ -129,3 +130,5 @@ const createTeam = function (teamCards) {
 
     `;
 }
+
+module.exports = generateHTML;
