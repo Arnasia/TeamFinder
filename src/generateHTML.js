@@ -86,6 +86,10 @@ generateHTML = (data) => {
     }
     //joining forces lol... strings 
      const teamCards = pageArray.join('')
+
+     //return to page
+     const creatingTeam = createTeam(teamCards);
+     return creatingTeam;
 }
 
 const createTeam = function (teamCards) {
