@@ -64,23 +64,23 @@ generateHTML = (data) => {
     pageArray = [];
 
     for (let i = 0; i < data.length; i++) {
-        const employee = data [i];
-        const role = employee.getRole();
+        const teamMember = data [i];
+        const role = teamMember.getRole();
 
         if (role === 'Manager') {
-            const managerCard = generateManager(employee);
+            const managerCard = generateManager(teamMember);
 
             pageArray.push(managerCard);
         }
 
         if (role === 'Engineer') {
-            const engineerCard = generateEngineer(employee);
+            const engineerCard = generateEngineer(teamMember);
 
             pageArray.push(engineerCard);
         }
 
         if (role === 'Intern') {
-            const internCard = generateIntern(employee);
+            const internCard = generateIntern(teamMember);
 
             pageArray.push(internCard);
         }
