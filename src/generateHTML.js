@@ -84,13 +84,15 @@ generateHTML = (data) => {
             pageArray.push(internCard);
         }
     }
+    //joining forces lol... strings 
+     const teamCards = pageArray.join('')
 }
 
 const createTeam = function (teamCards) {
     return`
     <!DOCTYPE html>
-<html lang="en">
-<head>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
