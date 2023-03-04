@@ -1,4 +1,4 @@
-//writing function to create individual card
+//writing function to create team cards
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
