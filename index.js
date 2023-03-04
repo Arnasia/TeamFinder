@@ -146,5 +146,29 @@ const addMember = () => {
             return theTeam;
         }
     })
-
 };
+
+//instructing where this data should be written to
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        // if statement in case of error 
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("You've Successfully Created Your Team! Please view your new HTML")
+        }
+    })
+}; 
+
+addManager()
+  .then(add)
+  .then(theTeam => {
+    return generateHTML(theTeam);
+  })
+  .then(pageHTML => {
+    return writeFile(pageHTML);
+  })
+  .catch(err => {
+ console.log(err);
+  });
