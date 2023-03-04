@@ -120,3 +120,31 @@ const addMember = () => {
             default: false
         }
     ])
+    .then(teamData => {
+        
+        //data for team members
+
+        let { name, id, email, role, github, school, confirmAddMember } = teamData; 
+        let member; 
+
+        if (role === "Engineer") {
+            member = new Engineer (name, id, email, github);
+
+            console.log(member);
+
+        } else if (role === "Intern") {
+            member = new Intern (name, id, email, school);
+
+            console.log(member);
+        }
+
+        theTeam.push(member); 
+
+        if (confirmAddMember) {
+            return addMember(theTeam); 
+        } else {
+            return theTeam;
+        }
+    })
+
+};
