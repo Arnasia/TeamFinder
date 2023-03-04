@@ -161,8 +161,8 @@ const writeFile = data => {
     })
 }; 
 
-addManager()
-  .then(add)
+createManager()
+  .then(addMember)
   .then(theTeam => {
     return generateHTML(theTeam);
   })
