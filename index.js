@@ -24,17 +24,17 @@ const createManager = () => {
         {
             type: 'input',
             name: 'id',
-            message: "Please provide the manager's ID."
+            message: "Please provide the manager's ID:"
         },
         {
             type: 'input',
             name: 'email',
-            message: "Please provide the manager's email."
+            message: "Please provide the manager's email:"
         },
         {
             type: 'input',
             name: 'officeNumber',
-            message: "Please insert the manager's office number",
+            message: "Please insert the manager's office number:",
             validate: officeNumber => {
                 if  (isNaN(officeNumber)) {
                     console.log ('Please enter a valid office number!')
@@ -72,7 +72,7 @@ const addMember = () => {
         {
             type: 'input',
             name: 'id',
-            message: "Please enter the employee's ID.",
+            message: "Please enter the employee's ID:",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
                     console.log ("Please enter the employee's ID!")
@@ -85,12 +85,12 @@ const addMember = () => {
         {
             type: 'input',
             name: 'email',
-            message: "Please enter the employee's email.",
+            message: "Please enter the employee's email:",
         },
         {
             type: 'input',
             name: 'github',
-            message: "Please enter the employee's github username.",
+            message: "Please enter the employee's github username:",
             when: (input) => input.role === "Engineer",
             validate: github => {
                 if (github) {
@@ -103,7 +103,7 @@ const addMember = () => {
         {
             type: 'input',
             name: 'school',
-            message: "Please enter the intern's school",
+            message: "Please enter the intern's school:",
             when: (input) => input.role === "Intern",
             validate: school => {
                 if (school) {
