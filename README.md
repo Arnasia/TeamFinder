@@ -5,8 +5,8 @@
 This app allows users to create a team portfolio of their desire. This is done by user input using inquirer. This project was to build a Node.js command-line app that takes in new information that is entered about the user team and displays onto the newly created html page. This project demonstrates use of OOP using Jest. The focus was on unit testing. Below is a demonstration of the node-based application and testing shown below.
 
 ## Table of Contents
-- [User Story](#UserStory)
-- [Acceptance Criteria](#AcceptanceCriteria)
+- [User Story](#User)
+- [Acceptance Criteria](#Acceptance)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Screenshot](#Screenshot)
