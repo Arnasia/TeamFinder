@@ -18,11 +18,14 @@ This app allows users to create a team portfolio of their desire. This is done b
 - [Questions](#Questions)
 
 ## User Story
+```md
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
+```
 
 ## Acceptance Criteria
+```md
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
@@ -40,12 +43,13 @@ WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+```
 
 ## Installation
 Users should clone the repo from GitHub and download Node. This app also requires a file system and inquirer module. This app uses Jest for testing.
 
 ## Usage
-This require you to use node index.js in your command line to prompt questions.
+This require you to use `node index.js` in your command line to prompt questions.
 
 ## Screenshot
 
@@ -67,7 +71,7 @@ This application is license under MIT.
 Please refer to the installation section for instructions.
 
 ## Test
-Input npm install jest --save-dev into the command line for testing.
+Input `npm install jest --save-dev` into the command line for testing.
 
 ## Questions
 For any questions you can contact me at arnasial.jackson@gmail.com
