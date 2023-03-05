@@ -52,10 +52,10 @@ Users should clone the repo from GitHub and download Node. This app also require
 This require you to use `node index.js` in your command line to prompt questions.
 
 ## Screenshot
-
+![Screenshot](./assets/images/127.0.0.1_5500_dist_index.html.png)
 
 ## Walkthrough Video
-
+![Video](./assets/TeamCreatorVid.webm)
 
 ## License
 This application is license under MIT.
